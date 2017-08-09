@@ -1,0 +1,418 @@
+#chartdiv {
+    width       : 100%;
+    height      : 400px;
+    font-size   : 11px;
+}
+html, #aggregateLabs, #whatscoreBG {
+    padding-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+/*Firefox has some awkward fieldset styling involving width that interferes with the responsive table.
+This cannot be overridden without a Firefox-specific hack that we don’t provide in Bootstrap:*/
+@-moz-document url-prefix() {
+    fieldset { display: table-cell; }
+}
+
+/*START CSS FOR ALL CONTENT **************************/
+.colorGreen{
+    color: green;
+}
+.color-white{
+    color: white;
+}
+#subListBody a {
+    color: #007e8c;
+}
+.marg-auto {
+    margin: auto !important;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-0 {
+    margin-top: 0px;
+}
+.mb-0 {
+    margin-bottom: 0px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.ml-20-p{
+    margin-left: 20%;
+}
+.mr-20-p{
+    margin-right: 20%;
+}
+.mr-20{
+    margin-right: 20px;
+}
+.mr-30{
+    margin-right: 30px;
+}
+#loginDetails > input, #registerDetails > input{
+    padding-left: 10px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    height: 34px;
+}
+.pt-0{
+    padding-top: 0px !important;
+}
+.pt-5{
+    padding-top: 5px;
+}
+.pt-10{
+    padding-top: 10px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pt-50 {
+    padding-top: 50px !important;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.p-5{
+    padding: 5px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-20{
+    padding: 20px;
+}
+.p-30{
+    padding: 30px;
+}
+.fl-right{
+    float: right;
+}
+.displayNone {
+    display: none;
+}
+.max-w-70pc {
+    max-width: 70% !important;
+}
+.max-w-50pc {
+    max-width: 50% !important;
+}
+.max-h-400 {
+    max-height: 400px !important;
+}
+.mg-t-15 {
+    margin-top: 15px !important;
+}
+.mg-t-20 {
+    margin-top: 20px !important;
+}
+.mg-r-15 {
+    margin-right: 15% !important;
+}
+.mg-l-15 {
+    margin-left: 15% !important;
+}
+.mg-r-20 {
+    margin-right: 20% !important;
+}
+.mg-l-20 {
+    margin-left: 20% !important;
+}
+.mg-l-5px {
+    margin-left: 5px !important;
+}
+.txt-center {
+    text-align: center;
+}
+.txt-left {
+    text-align: left;
+}
+.txt-right {
+    text-align: right;
+}
+.disp-block {
+    display: block !important;
+}
+.disp-none {
+    display: none !important;
+}
+.font-large {
+    font-size: 18px !important;
+}
+.fa-1-2x{
+    font-size: 1.2em;
+}
+.color-white{
+    color: #ffffff;
+}
+.color-black{
+    color: #333;
+}
+.bg-color-maroon{
+    background-color: #8d322c;
+}
+.bg-color-grey{
+    background-color: grey;
+}
+.bg-color-white{
+    background-color: #ffffff;
+}
+.bg-ws2-feed{
+    background-color: #8d322c;
+}
+.cur-point{
+    cursor: pointer;
+}
+.cur-help{
+    cursor: help;
+}
+.left-100{
+    left: 100%;
+}
+.border-10{
+    border-radius: 10px;
+}
+.border-blr-10{
+    border-bottom-left-radius: 10px;
+}
+.border-blr-5{
+    border-bottom-left-radius: 5px;
+}
+.border-brr-10{
+    border-bottom-right-radius: 10px;
+}
+.border-brr-5{
+    border-bottom-right-radius: 5px;
+}
+.border-hsss{
+    border-style:hidden solid solid solid;
+}
+.border-w-1{
+    border-width: 1px;
+}
+.border-grey{
+    border-color: grey;
+}
+.w-100-p{
+    width: 100%;
+}
+.w-500{
+    width: 500px;
+}
+.w-525{
+    width: 525px;
+}
+.w-478{
+    width: 478px;
+}
+.h-249{
+    height: 249px;
+}
+.h-30{
+    height: 30px;
+}
+/*END CSS FOR ALL CONTENT **************************/
+
+/*START CSS FOR CHARTS *****************************/
+#timeGradeChart {
+    padding-top: 10px;
+}
+/*END CSS FOR CHARTS **************************/
+
+/*START CSS FOR TOOLTIP *****************************/
+.tooltip.right .tooltip-inner {
+    background-color: #f0ad4e;
+    font-size: 14px;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #f0ad4e;
+}
+.tooltip.left .tooltip-inner {
+    background-color: #f0ad4e;
+    font-size: 14px;
+}
+.tooltip.left .tooltip-arrow {
+    border-right-color: #f0ad4e;
+}
+/*END CSS FOR CHARTS **************************/
+
+/*START CSS FOR INPUT BOX *****************************/
+#labEntries {
+    border-radius: 10px;
+    /* border-color: #32CD32; */
+    border-style: solid;
+    border-width: thin;
+    border-color: #ccc;
+    height: 30px;
+    padding: 5px;
+}
+#labEntries:focus {
+    outline:none;
+}
+#retrieveID:focus {
+    outline:none;
+}
+#retrieveID:focus {
+    border-color: inherit;
+}
+#retrieveID{
+    height: 30px;
+    border-radius: 10px;
+    padding-top: 5px;
+}
+/*END CSS FOR INPUT **************************/
+
+/*START CSS FOR THE TABLE **************************/
+#chartContainer {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+/*END CSS FOR THE CHART ****************************/
+
+
+/*START CSS FOR THE TABLE **************************/
+#displayTable {
+    position: relative !important;
+    text-align: left !important;
+}
+#tableHeader {
+    background-color: #8d322c;
+    color: white;
+    border-top-left-radius: 5px;
+}
+.roundedBorderTopLeft {
+    border-top-left-radius: 5px;
+}
+.roundedBorderTopRight {
+    border-top-right-radius: 5px;
+}
+.letterButtons {
+    background: #8d322c;
+    color: #ffffff;
+}
+.letterButtons:hover, .letterButtons:focus, .letterButtons:active, .letterButtons.active, .letterButtons:active:focus {
+    background: #ffffff;
+    color: #8d322c;
+    border-color: #8d322c;
+}
+/*END CSS FOR THE TABLE **************************/
+
+/*CSS FOR  POPOVERS   *****************************/
+.pos-fixed {
+    position: fixed;
+}
+.pos-relative {
+    position: relative;
+}
+.z-i-2{
+    z-index: 2;
+}
+
+.pop-pos{
+    top: 10%;
+    right: 1%;
+}
+
+/*END CSS FOR THE TABLE ***************************/
+
+/*CSS FOR TOGGLE SWITCH   **************************/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 15px;
+}
+
+.switch input {display:none;}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: green;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px);
+    transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+/*END CSS FOR TOGGLE SWITCH   **********************/
+.displayStatus{
+    max-width: 100% !important;
+}
+.popover {
+    /*max-height: 100% !important;*/
+    max-width: 50% !important;
+}

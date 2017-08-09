@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/bootstrap-3.3.7-dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/visualEng.css" rel="stylesheet" type="text/css">
+    <title>WhatScore Login Home</title>
+</head>
+<body id="whatscoreBG" class="pt-50" style="background-color: #FAECEC">
+
+    <nav class="navbar navbar-default navbar-fixed-top color-white bg-color-maroon">
+        <div class="container-fluid">
+            <div class="navbar-header w-100-p">
+                <div class="w-100-p">
+                    <div class="ml-30 mr-30 mt-10" style="">
+                        <p class="mb-0">
+                            <span style="font-size: 25px">whatScore</span>
+                            <a id="logout" href="#" onclick="logOut()" class="fl-right pt-5" style="font-size: large; color: white">Log out</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="userColumn" class="border-blr-10 border-brr-10 txt-left color-black" style="width: 275px; height:300px; position: fixed;margin-left: 20px;">
+        <div class="p-30 pt-0">
+            <p id="userName" class="font-large"></p>
+            <p id="sidebarDesc" class="font-medium"></p>
+        </div>
+    </section>
+
+    <section id="newsFeed" class="txt-center" style="margin-left: 285px; margin-right:30px; width: 517px;height:100%; overflow: scroll; overflow-x: hidden; float: left; display: inline;">
+        <p class="font-large mb-0 txt-left">General football news</p>
+        <div id="loaderNewsFeed">
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i></br>
+        </div>
+    </section>
+    <section id="teamNewsFeed" class="txt-center" style="margin-left: 315px; width: 517px; height:100%; overflow: scroll; overflow-x: hidden;">
+        <p id="teamNewsHead" class="font-large mb-0 text-left"></p>
+        <div id="loaderClubFeed">
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i></br>
+        </div>
+    </section>
+
+
+</body>
+
+<script src="../js/jquery/jquery-3.2.1.min.js"></script>
+<script src="../js/loginHomeController.js"></script>
+<script src="../js/logoutUser.js"></script>
+</html>
+
+<!--<div class="newsData bg-color-white border-blr-10 border-brr-10 w-500 marg-auto mb-20">-->
+<!--<div class="mb-0 bg-color-maroon h-30">-->
+<!--<p class="newsDataTitle color-white pl-10 pt-5 mb-0">-->
+<!--Messi's 500 goals in numbers-->
+<!--</p>-->
+<!--</div>-->
+<!--<div class="border-blr-10 border-brr-10 mt-0 p-10">-->
+<!--<div class="newsImage w-478">-->
+<!--<a href="http://www.skysports.com/football/news/11096/10844910/lionel-messi-scored-500th-barcelona-goal-against-real-madrid-in-el-clasico">-->
+<!--<img src="http://e0.365dm.com/17/04/16-9/30/skysports-messi-lionel-barcelona-graphic_3937331.jpg?20170424080812" class="w-478 h-249">-->
+<!--</a>-->
+<!--</div>-->
+<!--<div class="newsShortDesc w-478 mb-0 border-hsss border-w-1 border-grey border-blr-5 border-brr-5">-->
+<!--<p class="p-5 mb-0">-->
+<!--Lionel Messi scored his 500th goal for Barcelona during a 3-2 win over Real Madrid on Sunday - but when and how did he score them all?-->
+<!--</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
